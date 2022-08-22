@@ -7,6 +7,7 @@ input_number = input("Write a number greater than 10:")
 input_sum = int(input_number[0]) + int(input_number[1])
 print(input_sum)
 
+##############################################################################################################
 """
 Write a program that calculates the Body Mass Index (BMI) from a user's weight and height.
 The BMI is a measure of some's weight taking into account their height.
@@ -20,7 +21,7 @@ input_person_height = input("What is your height in meters?")
 bmi_calculation = int(input_person_weight)/float(input_person_height)**2
 print(bmi_calculation)
 
-
+##############################################################################################################
 """
 Create a program using maths and f-Strings that tells us how many days, weeks, months we have left if we live until 90 years old.
 It will take your current age as the input and output a message with our time left in this format:
@@ -40,7 +41,10 @@ if int(input_person_currently_age) > 0 and int(input_person_currently_age) < 90:
     total_weeks_lived = 52 * int(input_person_currently_age)
     total_months_lived = 12 * int(input_person_currently_age)
     print(f"You have alread lived {total_days_lived} days, {total_weeks_lived} weeks, {total_months_lived} months.")
+else:
+    print("Your age is out of our calculation")
 
+##############################################################################################################
 """
 If the bill was $150.00, split between 5 people, with 12% tip.
 Each person should pay (150.00 / 5) * 1.12 = 33.6
@@ -53,5 +57,5 @@ percentage_tip = input("What is the percentage tip?")
 split_total_bill = input("How many people to split the bill?")
 percentage_tip_calculate = (float(percentage_tip)/100) * float(total_bill)
 total_payment = (float(total_bill)/int(split_total_bill)) + percentage_tip_calculate
-print(f"O total da conta para cada um será: R${total_payment}")
-
+final_amount = "{:.2f}".format(total_payment)
+print(f"O total da conta para cada um será: R${final_amount}")
