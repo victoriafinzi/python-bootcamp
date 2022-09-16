@@ -1,17 +1,3 @@
-"""
-You are going to write a virtual coin toss program. It will randomly tell the user "Heads" or "Tails".
-Important, the first letter should be capitalised and spelt exactly like in the example e.g. Heads, not heads.
-There are many ways of doing this. But to practice what we learnt in the last lesson, you should generate a random number, either 0 or 1. 
-Then use that number to print out Heads or Tails.
-"""
-import random
-
-random_number = random.randint(0,1)
-
-if random_number == 0:
-    print("Heads")
-else:
-    print("Tails")
 
 """
 You are going to write a program which will select a random name from a list of names. 
@@ -30,6 +16,10 @@ For this to work, you must enter all the names as name followed by comma then sp
 
 ###############################
 #Smater way to do it: 
+
+import random
+
+
 input_names = input("Give everybody's names, seperated by a comma: ")
 names = input_names.split(",")
 unlucky_person = random.choice(names)
